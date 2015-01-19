@@ -14,6 +14,7 @@
 4. GitHub
   1. https://help.github.com/articles/generating-ssh-keys/
 5. Heroku
+  1. Sign up for Heroku. (https://signup.heroku.com/www-header)
   1. `heroku login`
   2. `heroku keys:add`
 6. TextMate
