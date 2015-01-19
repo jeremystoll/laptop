@@ -4,8 +4,10 @@
   1. Enable unverified software installs (Settings > Security).
   2. Speed up keyboard key-repeat setting.
 2. Slack
-  1. [Download](https://itunes.apple.com/us/app/slack/id803453959)
-  2. Sign in.
+  1. Enable/Invite the student.
+  2. Use invitation or Forgot Password to get logged in via Web. (https://omahacodeschool.slack.com/forgot)
+  3. [Download](https://itunes.apple.com/us/app/slack/id803453959)
+  4. Sign in.
 3. OhMyZSH (https://github.com/robbyrussell/oh-my-zsh)
   1. `curl -L http://install.ohmyz.sh | sh`
   2. Restart **Terminal** after it's done.
