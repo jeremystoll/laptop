@@ -27,12 +27,12 @@ You can do the following while the main Laptop installation script is running.
 
 **Do not** do the following until the main Laptop installation script is complete.
 
-4. OhMyZSH (https://github.com/robbyrussell/oh-my-zsh)
+4. OhMyZSH
   1. Quit/Restart **Terminal.**
   2. `curl -L http://install.ohmyz.sh | sh`
   3. Quit/Restart **Terminal.**
 5. GitHub
-  1. https://help.github.com/articles/generating-ssh-keys/
+  1. In a new Tab, open https://help.github.com/articles/generating-ssh-keys/ (Easy to do if you hold down **Command** while clicking on the link.)
     - Start on "Step 2".
     - Copy/paste the *white* lines, excluding the dollar sign, into **Terminal**.  
     ![](http://cl.ly/ZQ1a/Screen%20Shot%202015-01-22%20at%202.55.15%20PM.png)
@@ -42,7 +42,7 @@ You can do the following while the main Laptop installation script is running.
   1. `heroku login`
   2. `heroku keys:add`
 7. TextMate
-  1. https://api.textmate.org/downloads/release
+  1. Click https://api.textmate.org/downloads/release
     - This downloads a "ZIP" file into your **Downloads** folder.
     - Unzip the file to reveal the TextMate application (Its icon is a bright purple/pink flower).  
     ![](http://cl.ly/ZPhF/2015-01-22%2015_03_33.gif)
