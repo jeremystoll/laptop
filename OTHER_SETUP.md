@@ -23,6 +23,8 @@ You can do the following while the main Laptop installation script is running.
   - Hacker News: https://news.ycombinator.com/login?whence=news
   - Treehouse: Expect an email invitation.
   
+---
+
 **Do not** do the following until the main Laptop installation script is complete.
 
 4. OhMyZSH (https://github.com/robbyrussell/oh-my-zsh)
