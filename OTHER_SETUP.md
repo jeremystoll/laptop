@@ -1,3 +1,26 @@
+# Main Installation Script
+
+Open **Terminal**.
+
+(Press **Command + Spacebar** to activate **Spotlight**. Start typing "Terminal" into it, and you'll see some magic.)
+
+Into **Terminal**, copy/paste these lines:
+
+```bash
+curl --remote-name https://raw.githubusercontent.com/omahacodeschool/laptop/master/mac
+sh mac 2>&1 | tee ~/laptop.log
+```
+
+You'll be asked to enter your password. This is the password for your Mac. While you type it in, nothing will be shown. It's weird, but rest assured that your characters are being typed.
+
+Next, you will probably be asked to install some software. Go ahead and install it. It'll take 5-10 minutes.
+
+While that installation is going on, you can do the first few steps from the "Other Setup" section below.
+
+Keep checking back on that installation though. When it finishes, return to **Terminal** to continue the main installation script. You might need to re-enter your password.
+
+Once you resume the main installation script, it'll probably take 5-15 minutes to complete.
+
 # Other Setup
 
 You can do the following while the main Laptop installation script is running.
