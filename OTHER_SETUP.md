@@ -105,4 +105,5 @@ You can do the following while the main Laptop installation script is running.
     - `heroku create`
     - `heroku addons:add heroku-postgresql:dev`
     - `git push heroku master`
-      - If there are no errors, you're done!
+      - If there are no errors, you're done!  
+      ![](http://cl.ly/ZPYM/18rm2xn1of2b9gif.gif)
