@@ -5,13 +5,13 @@ You can do the following while the main Laptop installation script is running.
 1. Settings
   1. Enable unverified software installs (**Settings > Security**).  
   ![](http://cl.ly/ZPqP/Screen%20Shot%202015-01-22%20at%201.20.46%20PM.png)
-  2. Speed up keyboard settings (**Settings > Keyboard**)
+  2. Speed up keyboard settings (**Settings > Keyboard**)  
   ![](http://cl.ly/ZPnC/Screen%20Shot%202015-01-22%20at%201.21.45%20PM.png)
-  3. Enable tap-for-click (**Settings > Trackpad**).
+  3. Enable tap-for-click (**Settings > Trackpad**).  
   ![](http://cl.ly/ZPnC/Screen%20Shot%202015-01-22%20at%201.21.45%20PM.png)
 2. Slack
   1. Enable/Invite the student.
-  2. Use invitation or Forgot Password to get logged in via Web. (https://omahacodeschool.slack.com/forgot)
+  2. Use invitation or Forgot Password to get logged in via Web.   (https://omahacodeschool.slack.com/forgot)
   3. [Download](https://itunes.apple.com/us/app/slack/id803453959)
   4. Open **Slack** application and sign in.
     - Domain: omahacodeschool
@@ -32,7 +32,7 @@ You can do the following while the main Laptop installation script is running.
 5. GitHub
   1. https://help.github.com/articles/generating-ssh-keys/
     - Start on "Step 2".
-    - Copy/paste the *white* lines, excluding the dollar sign, into **Terminal**.
+    - Copy/paste the *white* lines, excluding the dollar sign, into **Terminal**.  
     ![](http://cl.ly/ZQ1a/Screen%20Shot%202015-01-22%20at%202.55.15%20PM.png)
       - So for this example, you'd copy/paste the `ssh-keygen -t rsa -C "your_email@example.com"` text.
       - But **make sure** you replace "your_email@example.com" with your actual email!
@@ -42,9 +42,9 @@ You can do the following while the main Laptop installation script is running.
 7. TextMate
   1. https://api.textmate.org/downloads/release
     - This downloads a "ZIP" file into your **Downloads** folder.
-    - Unzip the file to reveal the TextMate application (Its icon is a bright purple/pink flower).
+    - Unzip the file to reveal the TextMate application (Its icon is a bright purple/pink flower).  
     ![](http://cl.ly/ZPhF/2015-01-22%2015_03_33.gif)
-    - Drag that application into your **Applications** folder.
+    - Drag that application into your **Applications** folder.  
     ![](http://cl.ly/ZQNx/2015-01-22%2015_03_50.gif)
   2. Open **TextMate**
     - Go to the Preferences. (It might ask for access to your contacts, which is fine to allow or deny.)
@@ -76,7 +76,7 @@ You can do the following while the main Laptop installation script is running.
   - `rails new temp -d postgresql`
   - `cd temp`
   - `mate .` - This will open the entire Rails project in TextMate.
-    - In TextMate, click the arrow next to 'config' to reveal its files. Then click the icon next to 'database.yml' to open that file.
+    - In TextMate, click the arrow next to 'config' to reveal its files. Then click the icon next to 'database.yml' to open that file.  
     ![](http://cl.ly/ZQLk/2015-01-22%2015_20_58.gif)
     - In that file...
       - find any lines with `username` or `password` as the key, and comment those lines out.
