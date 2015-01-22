@@ -96,7 +96,7 @@ You can do the following while the main Laptop installation script is running.
       - find any lines with `host` or `port` as the key, and **uncomment** them.
     - Save the file.
   - Back in **Terminal**, type `rails server`.
-    - Go to [http://localhost:3000]. You should be welcomes to a new Rails project.
+    - Go to <http://localhost:3000>. You should be welcomes to a new Rails project.
   - Back in **Terminal** again, press **Control + C** to "cancel" (exit) the Rails program.
   - Then type...
     - `git init`
