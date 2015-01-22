@@ -51,7 +51,7 @@ You can do the following while the main Laptop installation script is running.
     - In Preferences, go to the 'Terminal' tab and click the 'Install' button.
   3. Configuration
     - Into **Terminal**: `mate ~/.tm_properties` - This will open up a blank document in TextMate.
-    - Paste all of the content from [this link](https://raw.githubusercontent.com/omahacodeschool/laptop/master/tm_properties_example) into that blank document.
+    - Copy/Paste all of the content from [this link](https://raw.githubusercontent.com/omahacodeschool/laptop/master/tm_properties_example) into that blank document.
     - Type **Command + S** to save the document, and then close the document.
 7. Git Setup
   1. `git config --global core.editor "mate -w"`
