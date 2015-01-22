@@ -3,7 +3,7 @@
 You can do the following while the main Laptop installation script is running.
 
 1. Settings
-  1. Enable unverified software installs (**Settings > Security**).
+  1. Enable unverified software installs (**Settings > Security**).  
   ![](http://cl.ly/ZPqP/Screen%20Shot%202015-01-22%20at%201.20.46%20PM.png)
   2. Speed up keyboard settings (**Settings > Keyboard**)
   ![](http://cl.ly/ZPnC/Screen%20Shot%202015-01-22%20at%201.21.45%20PM.png)
