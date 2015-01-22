@@ -32,15 +32,25 @@ You can do the following while the main Laptop installation script is running.
   2. `curl -L http://install.ohmyz.sh | sh`
   3. Quit/Restart **Terminal.**
 5. GitHub
-  1. In a new Tab, open https://help.github.com/articles/generating-ssh-keys/ (Easy to do if you hold down **Command** while clicking on the link.)
-    - Start on "Step 2".
-    - Copy/paste the *white* lines, excluding the dollar sign, into **Terminal**.  
-    ![](http://cl.ly/ZQ1a/Screen%20Shot%202015-01-22%20at%202.55.15%20PM.png)
-      - So for this example, you'd copy/paste the `ssh-keygen -t rsa -C "your_email@example.com"` text.
-      - But **make sure** you replace "your_email@example.com" with your actual email!
+  1. `ssh-keygen -t rsa -C "your_email@example.com"` - Use your real email address! (The same one you used to sign up for GitHub.com.) Don't delete the quotes. They're important.
+    - So, if I did this, I would type the following exactly: `ssh-keygen -t rsa -C "sumeet@sumeetjain.com"`
+    - It'll ask you some stuff and then for more stuff. Just keep hitting **Enter** until you're back at the prompt.
+  2. `eval "$(ssh-agent -s)"`
+  3. `ssh-add ~/.ssh/id_rsa`
+  4. `pbcopy < ~/.ssh/id_rsa.pub` - This copies a bunch of text for you, without you even realizing it. Magic.
+  5. Go to https://github.com/settings/ssh
+    - Click "Add SSH Key"
+    - Leave the 'Title' field blank.
+    - In the 'Key' section, paste the stuff that was magically copied from earlier. Don't modify it in any way – not even to delete an extra blank line that you think is unimportant.
+    - Save by clicking the green "Add Key" button.
+  6. `ssh -T git@github.com`
+    - Type "yes" or "y" for any questions it asks you.
+    - If the message it gives you now contains the word "successfully", you're good.
 6. Heroku
   1. `heroku login`
+    - Use the Heroku email address and password from earlier.
   2. `heroku keys:add`
+    - Type "yes" or "y" for any questions it asks you.
 7. TextMate
   1. Click https://api.textmate.org/downloads/release
     - This downloads a "ZIP" file into your **Downloads** folder.
@@ -68,6 +78,7 @@ You can do the following while the main Laptop installation script is running.
   2. Quit/Restart **Terminal**.
   3. `gem install jekyll`
   4. `gem install rails -v 3.2.21`
+    - If it asks whether you want to "overwrite some executables", you do.
   5. `gem install pry`
   6. `gem install bundler`
 8. `rbenv rehash` (and then quit/restart **Terminal**)
