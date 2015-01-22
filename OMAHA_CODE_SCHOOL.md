@@ -21,7 +21,7 @@ Keep checking back on that installation though. When it finishes, return to **Te
 
 Once you resume the main installation script, it'll probably take 5-15 minutes to complete.
 
-# Other Setup
+## Other Setup
 
 You can do the following while the main Laptop installation script is running.
 
