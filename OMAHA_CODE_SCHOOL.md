@@ -25,12 +25,12 @@ Once you resume the main installation script, it'll probably take 5-15 minutes t
 
 You can do the following while the main Laptop installation script is running.
 
-1. Settings
-  1. Enable unverified software installs (**Settings > Security**).  
+1. System Preferences
+  1. Enable unverified software installs (**System Preferences > Security**).  
   ![](http://cl.ly/ZPqP/Screen%20Shot%202015-01-22%20at%201.20.46%20PM.png)
-  2. Speed up keyboard settings (**Settings > Keyboard**)  
+  2. Speed up keyboard settings (**System Preferences > Keyboard**)  
   ![](http://cl.ly/ZPnC/Screen%20Shot%202015-01-22%20at%201.21.45%20PM.png)
-  3. Enable tap-for-click (**Settings > Trackpad**).  
+  3. Enable tap-for-click (**System Preferences > Trackpad**).  
   ![](http://cl.ly/ZPnC/Screen%20Shot%202015-01-22%20at%201.21.45%20PM.png)
 2. Slack
   1. Enable/Invite the student.
