@@ -31,7 +31,7 @@ You can do the following while the main Laptop installation script is running.
   2. Speed up keyboard settings (**System Preferences > Keyboard**)  
   ![](http://cl.ly/ZPnC/Screen%20Shot%202015-01-22%20at%201.21.45%20PM.png)
   3. Enable tap-for-click (**System Preferences > Trackpad**).  
-  ![](http://cl.ly/ZPnC/Screen%20Shot%202015-01-22%20at%201.21.45%20PM.png)
+  ![](http://cl.ly/ZQdH/Screen%20Shot%202015-01-22%20at%201.23.37%20PM.png)
 2. Slack
   1. Enable/Invite the student.
   2. Use invitation or Forgot Password to get logged in via Web.   (https://omahacodeschool.slack.com/forgot)
