@@ -13,7 +13,7 @@ fancy_echo() {
 
 append_to_zshrc() {
   local text="$1" zshrc
-  local skip_new_line="$2"
+  local skip_new_line="${2:-0}"
 
   if [ -w "$HOME/.zshrc.local" ]; then
     zshrc="$HOME/.zshrc.local"
@@ -139,7 +139,7 @@ brew_launchctl_restart 'redis'
 brew_install_or_upgrade 'the_silver_searcher'
 brew_install_or_upgrade 'imagemagick'
 brew_install_or_upgrade 'qt'
-brew_install_or_upgrade 'gh'
+brew_install_or_upgrade 'hub'
 brew_install_or_upgrade 'node'
 
 brew_install_or_upgrade 'rbenv'
