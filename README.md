@@ -127,6 +127,11 @@ Thank you, [contributors]!
 
 [contributors]: https://github.com/thoughtbot/laptop/graphs/contributors
 
+By participating in this project,
+you agree to abide by the thoughtbot [code of conduct].
+
+[code of conduct]: https://thoughtbot.com/open-source-code-of-conduct
+
 License
 -------
 
