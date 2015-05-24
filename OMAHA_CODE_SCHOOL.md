@@ -100,28 +100,26 @@ You can do the following while the main Laptop installation script is running.
     - Then save the file and close it.
   2. Quit/Restart **Terminal**.
   3. `gem install jekyll`
-  4. `gem install rails -v 3.2.21`
+  4. `gem install rails`
     - If it asks whether you want to "overwrite some executables", you do.
   5. `gem install pry`
   6. `gem install bundler`
 8. `rbenv rehash` (and then quit/restart **Terminal**)
-9. Testing Rails
+9. A folder for your work.
   - `cd ~`
   - `mkdir Code`
-  - `cd Code`
+  - Set up your **Finder** window.
+    - Drag your **Code** folder into the sidebar. Do the same for any other major folders you use often.
+10. Testing Rails
+  - `cd ~/Code`
   - `rails new temp -d postgresql`
+    - This makes a new Ruby on Rails project, called "Temp". It makes the project in a new folder, named "temp".
   - `cd temp`
-  - `mate .` - This will open the entire Rails project in TextMate.
-    - In TextMate, click the arrow next to 'config' to reveal its files. Then click the icon next to 'database.yml' to open that file.  
-    ![](http://cl.ly/ZQLk/2015-01-22%2015_20_58.gif)
-    - In that file...
-      - find any lines with `username` or `password` as the key, and comment those lines out.
-      - find any lines with `host` or `port` as the key, and **uncomment** them.
-    - Save the file.
-  - Back in **Terminal**, type `rails server`.
+  - `rails server`
     - Go to <http://localhost:3000>. You should be welcomed to a new Rails project.
-  - Back in **Terminal** again, press **Control + C** to "cancel" (exit) the Rails program.
-  - Then type...
+  - Back in **Terminal**, press **Control + C** to "cancel" (exit) the Rails program.
+  - Make sure you are in **~/Code/temp** by typing `pwd` (which tells you what your current location is).
+  - Then type:
     - `git init`
     - `git add .`
     - `git commit -m "Test application"`
