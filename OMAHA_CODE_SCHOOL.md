@@ -115,6 +115,7 @@ You can do the following while the main Laptop installation script is running.
   - `rails new temp -d postgresql`
     - This makes a new Ruby on Rails project, called "Temp". It makes the project in a new folder, named "temp".
   - `cd temp`
+  - `rake db:create`
   - `rails server`
     - Go to <http://localhost:3000>. You should be welcomed to a new Rails project.
   - Back in **Terminal**, press **Control + C** to "cancel" (exit) the Rails program.
