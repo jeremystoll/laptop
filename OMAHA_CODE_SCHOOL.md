@@ -140,7 +140,7 @@ Once the main installation script is completed, do the following steps in order:
     - `git add .`
     - `git commit -m "Test application"`
     - `heroku create`
-    - `heroku addons:create heroku-postgresql:dev`
+    - `heroku addons:create heroku-postgresql`
     - `git push heroku master`
       - If there are no errors, you're done!  
       ![](http://cl.ly/ZPYM/18rm2xn1of2b9gif.gif)
