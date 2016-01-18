@@ -82,9 +82,9 @@ Once the main installation script is completed, do the following steps in order:
     - Use the Heroku email address and password from earlier.
   2. `heroku keys:add`
     - Type "yes" or "y" for any questions it asks you.
-7. TextMate
-  1. Click https://api.textmate.org/downloads/release
-    - This downloads a "ZIP" file into your **Downloads** folder.
+7. Sublime Text
+  1. Click https://download.sublimetext.com/Sublime%20Text%20Build%203083.dmg
+    - This downloads a "DMG" file into your **Downloads** folder.
     - Unzip the file to reveal the TextMate application (Its icon is a bright purple/pink flower).  
     ![](http://cl.ly/ZPhF/2015-01-22%2015_03_33.gif)
     - Drag that application into your **Applications** folder.  
