@@ -85,11 +85,9 @@ Once the main installation script is completed, do the following steps in order:
 7. Sublime Text
   1. Click https://download.sublimetext.com/Sublime%20Text%20Build%203083.dmg
     - This downloads a "DMG" file into your **Downloads** folder.
-    - Unzip the file to reveal the TextMate application (Its icon is a bright purple/pink flower).  
-    ![](http://cl.ly/ZPhF/2015-01-22%2015_03_33.gif)
-    - Drag that application into your **Applications** folder.  
-    ![](http://cl.ly/ZQNx/2015-01-22%2015_03_50.gif)
-  2. Open **TextMate**
+    - Click on the downloaded DMG file to open it.
+    - Drag the Sublime Text application icon into the **Applications** folder to install it.
+  2. Open **Sublime Text**
     - Go to the Preferences. (It might ask for access to your contacts, which is fine to allow or deny.)
     - In Preferences, go to the 'Terminal' tab and click the 'Install' button.
   3. Configuration
