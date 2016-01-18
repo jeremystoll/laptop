@@ -109,7 +109,7 @@ Once the main installation script is completed, do the following steps in order:
   3. `git config --global user.email "your_email@example.com"` - Use the email address that you used to sign up for GitHub.com.
   4. `git config --global core.excludesfile ~/.gitignore`
 7. Gems
-  1. `mate ~/.gemrc`
+  1. `subl ~/.gemrc`
     - Into the blank document that just opened up, paste the following:
     `gem: --no-rdoc --no-ri`
     - Then save the file and close it.
