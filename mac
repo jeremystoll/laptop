@@ -143,7 +143,6 @@ brew_tap 'thoughtbot/formulae'
 brew update
 
 fancy_echo "Updating Unix tools ..."
-brew_install_or_upgrade 'ctags'
 brew_install_or_upgrade 'git'
 brew_install_or_upgrade 'openssl'
 brew unlink openssl && brew link openssl --force
