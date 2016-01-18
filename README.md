@@ -70,10 +70,9 @@ Unix tools:
 
 Heroku tools:
 
-* [Heroku Toolbelt] and [Parity] for interacting with the Heroku API
+* [Heroku Toolbelt] for interacting with the Heroku API
 
 [Heroku Toolbelt]: https://toolbelt.heroku.com/
-[Parity]: https://github.com/thoughtbot/parity
 
 GitHub tools:
 

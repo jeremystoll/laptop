@@ -1,25 +1,31 @@
-# Main Installation Script
+# Start Here
 
 Open **Terminal**.
 
 (Press **Command + Spacebar** to activate **Spotlight**. Start typing "Terminal" into it, and you'll see some magic.)
 
-Into **Terminal**, copy/paste these lines:
+Into **Terminal**, copy/paste these lines...
 
 ```bash
 curl --remote-name https://raw.githubusercontent.com/omahacodeschool/laptop/master/mac
 sh mac 2>&1 | tee ~/laptop.log
 ```
 
+...and then hit the `return` key on your keybord.
+
 You'll be asked to enter your password. This is the password for your Mac. While you type it in, nothing will be shown. It's weird, but rest assured that your characters are being typed.
 
-Next, you will probably be asked to install some software. Go ahead and install it. It'll take 5-10 minutes.
+Next, you will probably be asked to install some software. Go ahead and install it. It should be fairly quick (just a few minutes).
 
-While that installation is going on, you can do the first few steps from the "Other Setup" section below.
+When it finishes, you might need to re-enter your password to continue the main installation script.
 
-Keep checking back on that installation though. When it finishes, return to **Terminal** to continue the main installation script. You might need to re-enter your password.
+Once you resume the script, it'll probably take 5-20 minutes to complete. You can do things from the **Other Setup** section below while it's working. But check back every couple minutes to see if the terms "error" or "fatal error" have appeared. That means there's a problem, and you should let someone know.
 
-Once you resume the main installation script, it'll probably take 5-15 minutes to complete.
+The term "warning" is fine–you can ignore any warnings.
+
+Also check back occasionally to see if it's asking for your password again (It's okay if it does).
+
+You'll know the script is complete if you saw no _errors_ and it's back to the "prompt" (which is where one types new commands).
 
 ## Other Setup
 
@@ -33,22 +39,24 @@ You can do the following while the main Laptop installation script is running.
   3. Enable tap-for-click (**System Preferences > Trackpad**).  
   ![](http://cl.ly/ZQdH/Screen%20Shot%202015-01-22%20at%201.23.37%20PM.png)
 2. Slack
-  1. Enable/Invite the student.
-  2. Use invitation or Forgot Password to get logged in via Web.   (https://omahacodeschool.slack.com/forgot)
-  3. [Download](https://itunes.apple.com/us/app/slack/id803453959)
-  4. Open **Slack** application and sign in.
+  1. You should already have received an invitation to Slack, which is a tool we use to chat with each other. We use this _a lot_--everyone needs to set it up.
+  2. [Download](https://itunes.apple.com/us/app/slack/id803453959) the Slack application so that you can run it on your Mac. There is a website version too, but everyone in class should use the Mac version from now on.
+  3. Open the **Slack** application and sign in.
     - Domain: omahacodeschool
     - Username/Email: The email address you used when you applied to OCS.
-    - Password: The password you just set for Slack.
-3. Registrations
+    - Password: You should know this, but you can use the 'Forgot Password' feature if you need to.
+3. Registrations (If you've already signed up for something and confirmed your account, you don't need to do it again.)
   - Heroku: https://signup.heroku.com/www-header
     - Confirm your account by clicking the link they email you. That's when you'll choose a password as well.
   - Hacker News: https://news.ycombinator.com/login?whence=news
-  - Treehouse: Expect an email invitation.
+
+That's everything you can do until the main installation script is complete.
   
 ---
 
-**Do not** do the following until the main Laptop installation script is complete.
+**Do not do the following until the main Laptop installation script is complete.**
+
+Once the main installation script is completed, do the following steps in order:
 
 4. OhMyZSH
   1. Quit/Restart **Terminal.**
