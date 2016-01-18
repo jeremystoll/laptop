@@ -12,8 +12,9 @@ Requirements
 
 We support:
 
-* [OS X Mavericks (10.9)](https://itunes.apple.com/us/app/os-x-mavericks/id675248567)
-* [OS X Yosemite (10.10)](https://www.apple.com/osx/)
+* OS X Mavericks (10.9)
+* OS X Yosemite (10.10)
+* OS X El Capitan (10.11)
 
 Older versions may work but aren't regularly tested. Bug reports for older
 versions are welcome.
@@ -31,70 +32,103 @@ sh mac 2>&1 | tee ~/laptop.log
 Debugging
 ---------
 
-Your last Laptop run will be saved to `~/laptop.log`. Read through it to see if
-you can debug the issue yourself. If not, copy the lines where the script
-failed into a [new GitHub
-Issue](https://github.com/thoughtbot/laptop/issues/new) for us. Or, attach the
-whole log file as an attachment.
+Your last Laptop run will be saved to `~/laptop.log`.
+Read through it to see if you can debug the issue yourself.
+If not, copy the lines where the script failed into a
+[new GitHub Issue](https://github.com/omahacodeschool/laptop/issues/new) for us.
+Or, attach the whole log file as an attachment.
+
+OS X El Capitan (10.11)
+-----------------------
+
+You may have problems installing Homebrew for the first time on OS X El
+Capitan due to permission changes to the /usr directory (within which the Homebrew
+installation is typically located). See the [Homebrew El Capitan troubleshooting instructions](https://github.com/Homebrew/homebrew/blob/master/share/doc/homebrew/El_Capitan_and_Homebrew.md)
+for steps to resolve the permissions issues that interfere with Homebrew's
+installation.
 
 What it sets up
 ---------------
 
-* [Bundler] for managing Ruby libraries
-* [Foreman] for managing web processes
-* [gh] for interacting with the GitHub API
-* [Heroku Toolbelt] for interacting with the Heroku API
-* [Homebrew] for managing operating system libraries
-* [ImageMagick] for cropping and resizing images
-* [Node.js] and [NPM], for running apps and installing JavaScript packages
-* [Postgres] for storing relational data
-* [Qt] for headless JavaScript testing via Capybara Webkit
-* [Rbenv] for managing versions of Ruby
-* [Redis] for storing key-value data
-* [Ruby Build] for installing Rubies
-* [Ruby] stable for writing general-purpose code
+Mac OS X tools:
+
+* [Homebrew] for managing operating system libraries.
+
+[Homebrew]: http://brew.sh/
+
+Unix tools:
+
+* [Git] for version control
+* [OpenSSL] for Transport Layer Security (TLS)
 * [The Silver Searcher] for finding things in files
 * [Zsh] as your shell
 
-[Bundler]: http://bundler.io/
-[Foreman]: https://github.com/ddollar/foreman
-[gh]: https://github.com/jingweno/gh
+[Git]: https://git-scm.com/
+[OpenSSL]: https://www.openssl.org/
+[The Silver Searcher]: https://github.com/ggreer/the_silver_searcher
+[Zsh]: http://www.zsh.org/
+
+Heroku tools:
+
+* [Heroku Toolbelt] and [Parity] for interacting with the Heroku API
+
 [Heroku Toolbelt]: https://toolbelt.heroku.com/
-[Homebrew]: http://brew.sh/
+[Parity]: https://github.com/thoughtbot/parity
+
+GitHub tools:
+
+* [Hub] for interacting with the GitHub API
+
+[Hub]: http://hub.github.com/
+
+Image tools:
+
+* [ImageMagick] for cropping and resizing images
+
+Testing tools:
+
+* [Qt] for headless JavaScript testing via Capybara Webkit
+
+[Qt]: http://qt-project.org/
+
+Programming languages and configuration:
+
+* [Bundler] for managing Ruby libraries
+* [Node.js] and [NPM], for running apps and installing JavaScript packages
+* [Rbenv] for managing versions of Ruby
+* [Ruby Build] for installing Rubies
+* [Ruby] stable for writing general-purpose code
+
+[Bundler]: http://bundler.io/
 [ImageMagick]: http://www.imagemagick.org/
 [Node.js]: http://nodejs.org/
 [NPM]: https://www.npmjs.org/
-[Postgres]: http://www.postgresql.org/
-[Qt]: http://qt-project.org/
 [Rbenv]: https://github.com/sstephenson/rbenv
-[Redis]: http://redis.io/
 [Ruby Build]: https://github.com/sstephenson/ruby-build
 [Ruby]: https://www.ruby-lang.org/en/
-[The Silver Searcher]: https://github.com/ggreer/the_silver_searcher
-[Zsh]: http://www.zsh.org/
+
+Databases:
+
+* [Postgres] for storing relational data
+* [Redis] for storing key-value data
+
+[Postgres]: http://www.postgresql.org/
+[Redis]: http://redis.io/
 
 It should take less than 15 minutes to install (depends on your machine).
 
 Customize in `~/.laptop.local`
 ------------------------------
 
-Your `~/.laptop.local` is run at the end of the Laptop script.
+Your `~/.laptop.local` is run near the end of the Laptop script.
 Put your customizations there.
 For example:
 
 ```sh
 #!/bin/sh
 
-brew_tap 'caskroom/cask'
-brew_install_or_upgrade 'brew-cask'
-
-brew cask install dropbox
-brew cask install google-chrome
-brew cask install rdio
-
-gem_install_or_update 'parity'
-
-brew_install_or_upgrade 'tree'
+brew_install_or_upgrade 'go'
+brew_install_or_upgrade 'ngrok'
 brew_install_or_upgrade 'watch'
 ```
 
@@ -102,7 +136,9 @@ Write your customizations such that they can be run safely more than once.
 See the `mac` script for examples.
 
 Laptop functions such as `fancy_echo`,
-`brew_install_or_upgrade`, and
+`brew_install_or_upgrade`,
+`brew_tap`,
+`brew_launchctl_restart`, and
 `gem_install_or_update`
 can be used in your `~/.laptop.local`.
 
