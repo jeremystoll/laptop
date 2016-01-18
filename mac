@@ -147,7 +147,6 @@ brew_install_or_upgrade 'ctags'
 brew_install_or_upgrade 'git'
 brew_install_or_upgrade 'openssl'
 brew unlink openssl && brew link openssl --force
-brew_install_or_upgrade 'rcm'
 brew_install_or_upgrade 'reattach-to-user-namespace'
 brew_install_or_upgrade 'the_silver_searcher'
 brew_install_or_upgrade 'zsh'
