@@ -1,10 +1,18 @@
 # Start Here
 
-Open **Terminal**.
+Download **iTerm**. This is a command-line utility that you'll use on your Mac.
 
-(Press **Command + Spacebar** to activate **Spotlight**. Start typing "Terminal" into it, and you'll see some magic.)
+Click to download: https://iterm2.com/downloads/stable/iTerm2-2_1_4.zip
 
-Into **Terminal**, copy/paste these lines...
+Then install iTerm. Here is a video showing how to install it: http://cl.ly/el8i/iterm.mov
+
+---
+
+Once it's installed, open iTerm.
+
+(Press **Command + Spacebar** to activate **Spotlight**. Start typing "iTerm" into it, and you'll see it appear. Then just click on it to open.)
+
+Into iTerm, copy/paste these lines...
 
 ```bash
 curl --remote-name https://raw.githubusercontent.com/omahacodeschool/laptop/master/mac
@@ -59,11 +67,11 @@ That's everything you can do until the main installation script is complete.
 Once the main installation script is completed, do the following steps in order:
 
 4. OhMyZSH
-  1. Quit/Restart **Terminal.**
+  1. Quit/Restart iTerm.
   2. `curl -L http://install.ohmyz.sh | sh`
-  3. Quit/Restart **Terminal.**
+  3. Quit/Restart iTerm.
 5. GitHub
-  1. `ssh-keygen -t rsa -C "your_email@example.com"` - Use your real email address! (The same one you used to sign up for GitHub.com.) Don't delete the quotes. They're important.
+  1. Into iTerm: `ssh-keygen -t rsa -C "your_email@example.com"` - Use your real email address! (The same one you used to sign up for GitHub.com.) Don't delete the quotes. They're important.
     - So, if I did this, I would type the following exactly: `ssh-keygen -t rsa -C "sumeet@sumeetjain.com"`
     - It'll ask you some stuff and then for more stuff. Just keep hitting **Enter** until you're back at the prompt.
   2. `eval "$(ssh-agent -s)"`
@@ -87,15 +95,16 @@ Once the main installation script is completed, do the following steps in order:
     - This downloads a "DMG" file into your **Downloads** folder.
     - Click on the downloaded DMG file to open it.
     - Drag the Sublime Text application icon into the **Applications** folder to install it.
+    - Here is a video showing that done: http://cl.ly/ekey/st.mov
   2. Open **Sublime Text**
-    - Go to the Preferences. (It might ask for access to your contacts, which is fine to allow or deny.)
-    - In Preferences, go to the 'Terminal' tab and click the 'Install' button.
-  3. Configuration
-    - Into **Terminal**: `mate ~/.tm_properties` - This will open up a blank document in TextMate.
-    - Copy/Paste all of the content from [this link](https://raw.githubusercontent.com/omahacodeschool/laptop/master/tm_properties_example) into that blank document.
-    - Type **Command + S** to save the document, and then close the document.
+    - Then go to the User Settings by clicking **Sublime Text** > **Preferences** > **Settings - User**. (Here's a video showing how to get to that file: http://cl.ly/ell5/stprefs.mov)
+    - Erase all content from that document (There shouldn't be much).
+    - Copy/Paste all of the content from [this link](https://raw.githubusercontent.com/omahacodeschool/laptop/master/sublime_text_prefs) into that document.
+    - Save the document, and then close the document.
+  3. In **iTerm**, run the following line of code: `ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/subl`
+    - Then quit and re-open **iTerm**.
 7. Git Setup
-  1. `git config --global core.editor "mate -w"`
+  1. `git config --global core.editor "subl -w"`
   2. `git config --global user.name "Your Name"` - Use your real name!
   3. `git config --global user.email "your_email@example.com"` - Use the email address that you used to sign up for GitHub.com.
   4. `git config --global core.excludesfile ~/.gitignore`
@@ -104,13 +113,13 @@ Once the main installation script is completed, do the following steps in order:
     - Into the blank document that just opened up, paste the following:
     `gem: --no-rdoc --no-ri`
     - Then save the file and close it.
-  2. Quit/Restart **Terminal**.
+  2. Quit/Restart iTerm.
   3. `gem install jekyll`
   4. `gem install rails`
     - If it asks whether you want to "overwrite some executables", you do.
   5. `gem install pry`
   6. `gem install bundler`
-8. `rbenv rehash` (and then quit/restart **Terminal**)
+8. `rbenv rehash` (and then quit/restart iTerm)
 9. A folder for your work.
   - `cd ~`
   - `mkdir Code`
@@ -124,7 +133,7 @@ Once the main installation script is completed, do the following steps in order:
   - `rake db:create`
   - `rails server`
     - Go to <http://localhost:3000>. You should be welcomed to a new Rails project.
-  - Back in **Terminal**, press **Control + C** to "cancel" (exit) the Rails program.
+  - Back in iTerm, press **Control + C** to "cancel" (exit) the Rails program.
   - Make sure you are in **~/Code/temp** by typing `pwd` (which tells you what your current location is).
   - Then type:
     - `git init`
