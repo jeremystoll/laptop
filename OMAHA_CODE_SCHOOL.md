@@ -125,7 +125,7 @@ Once the main installation script is completed, do the following steps in order:
   - `mkdir Code`
   - Set up your **Finder** window.
     - This can be confusing to do, watch the gif below and then read the bullet point after it. Ask if you're not sure what to do:
-    ![](http://f.cl.ly/items/2k0G3F071M0L2s2E3j3V/code-folder.gif)
+    ![](http://cl.ly/ek8i/code-folder.gif)
     - Drag your **Code** folder into the sidebar. Do the same for any other major folders you use often.
 10. Testing Rails
   - `cd ~/Code`
